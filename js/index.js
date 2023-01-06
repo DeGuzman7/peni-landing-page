@@ -1,17 +1,3 @@
-// storing variables
-const hamburger= document.querySelector(".hamburger");
-const navMenu= document.querySelector(".nav-menu");
-
-//    hamburger toggling function
-hamburger.addEventListener("click", () => {
-hamburger.classList.toggle("active")
-navMenu.classList.toggle("active")
-})
-// activating the nav menu with the hamburger
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-hamburger.classList.remove("active")
-navMenu.classList.remove("active")
-}))
 
 // activating the flickity carousel
 var flkty = new Flickity( '.mobile-carousel', {
@@ -19,3 +5,13 @@ var flkty = new Flickity( '.mobile-carousel', {
     cellAlign: 'left',
     contain: true
   });
+  
+// activating toggle navigation on mobile
+function toggleMobileNavigation(){
+var element = document.getElementById('mobile-navigation')
+if (element.classList.contains('mobile-navigation-open')){
+  element.classList.remove('mobile-navigation-open');
+}else{
+  element.classList.add('mobile-navigation-open');
+ }
+}
