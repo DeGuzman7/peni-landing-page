@@ -15,3 +15,5 @@ if (element.classList.contains('mobile-navigation-open')){
   element.classList.add('mobile-navigation-open');
  }
 }
+
+AOS.init();

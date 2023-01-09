@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./images/peni logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -59,7 +60,7 @@
       <section class="hero-section">
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="hero-content-col1">
+                <div class="hero-content-col1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                   <h1 class="big-heading">Gain control of your 
                    <span> finances! </span> 
                   </h1>
@@ -74,9 +75,9 @@
                   </form>
                 </div>
                 <div class="hero-content-col2">
-                    <div class="img-container">
+                    <div class="img-container" data-aos="slide-left" data-aos-delay="100"data-aos-duration="1000">
                         <img src="images/double eclipse(1).png" class="double-vector" alt="double">
-                        <div class="phone-container">
+                        <div class="phone-container" data-aos="slide-left" data-aos-delay="500"data-aos-duration="1000">
                           <img src="images/triple phone.png" class="triple-phone" alt="triple iphone">
 
                         </div>
@@ -90,7 +91,7 @@
       <!-- ABOUT SEECTION -->
       <section class="about-section">
         <div class="container">
-          <div class="about-content">
+          <div class="about-content"data-aos="zoom-in"data-aos-duration="1000" data-aos-delay="200">
             <h1>About Us</h1>
             <p>
               PENI is a personal finance app that offers proper
@@ -107,8 +108,8 @@
       <!-- FEATURE SECTION ON MOBILE-->
       <div class="container">
         <section class="mobile-carousel">
-          <div class="first-image">
-            <img src="images/Mask group.png" alt="budjet img">
+          <div class="first-image"data-aos="zoom-in"data-aos-duration="1000" data-aos-delay="500">
+            <img src="images/Mask group.png" class="budget-mobile-image" alt="budget img">
             <h1>BUDGET</h1>
             <P>
               Accountability starts with proper planning. 
@@ -117,7 +118,7 @@
               </P>
           </div>
           <div class="second-image">
-            <img src="images/Mask group(1).png" alt="track img">
+            <img src="images/Mask group(1).png"class="track-mobile-image" alt="track img">
             <h1>TRACK</h1>
             <P>TRACK 
               Keep a record of all debit transactions
@@ -128,7 +129,7 @@
               </P>
           </div>
           <div class="third-img">
-            <img src="images/Mask group(2).png" alt="fin img">
+            <img src="images/Mask group(2).png" class="fin-mobile-image" alt="fin img">
             <h1>FINANCIAL EXPERT </h1>
             <P>
               Get connected to all the financial 
@@ -144,10 +145,10 @@
       <section class="feature-section">
         <div class="container">
           <div class="feature-content"> <!--grid container-->
-            <div class="feature-img">
+            <div class="feature-img"data-aos="zoom-in" data-aos-delay="200"data-aos-duration="1000">
               <img src="images/budjet phone img.png" alt="budget image">
             </div>
-            <div class="feature-description-bg">
+            <div class="feature-description-bg"data-aos="flip-left" data-aos-delay="300"data-aos-duration="1000">
               <div class="feature-description-text">
                 <h1>BUDGET</h1>
                 <p>
@@ -157,7 +158,7 @@
                   </p>
               </div>
             </div>
-            <div class="feature-description-bg">
+            <div class="feature-description-bg"data-aos="flip-right" data-aos-delay="300"data-aos-duration="1000">
               <div class="feature-description-text">
                 <h1>TRACK</h1>
                 <p>
@@ -168,13 +169,13 @@
                   </p>
               </div>
             </div>
-            <div class="feature-img feature-imgcol4">
+            <div class="feature-img feature-imgcol4"data-aos="zoom-out" data-aos-delay="200"data-aos-duration="1000">
               <img src="images/track phone img.png" alt="budget image">
             </div>
-            <div class="feature-img">
+            <div class="feature-img"data-aos="zoom-in" data-aos-delay="200"data-aos-duration="1000">
               <img src="images/fininancial phone img.png" alt="budget image">
             </div>
-            <div class="feature-description-bg">
+            <div class="feature-description-bg"data-aos="flip-left" data-aos-delay="300"data-aos-duration="1000">
               <div class="feature-description-text">
                 <h1>FINANCIAL EXPERT</h1>
                 <p> Get connected to all the financial assistance you 
@@ -190,9 +191,9 @@
       <!-- GET MORE SECTION -->
       <section class="getmore">
         <div class="container">
-          <h1>Get more with PENI...</h1>
+          <h1 data-aos="slide-up" data-aos-delay="200"data-aos-duration="1000">Get more with PENI...</h1>
           <div class="getmore-illustration">
-            <div class="first-illustration-content">
+            <div class="first-illustration-content"data-aos="zoom-in" data-aos-delay="300"data-aos-duration="1000">
               <img src="images/manage illustration.png" alt="first illustration">
               <div class="illustration-description first">
                 <h2>Set reminder for your important payments.</h2>
@@ -202,7 +203,7 @@
               </div>
             </div>
 
-            <div class="second-illustration-content">
+            <div class="second-illustration-content"data-aos="zoom-out" data-aos-delay="300"data-aos-duration="1000">
               <img src="images/Turn on notification illustration.png" alt="second illustration">
               <div class="illustration-description">
                 <h2>Get daily notifications to record transactions.</h2>
@@ -211,7 +212,7 @@
                 </h3>
               </div>
             </div>
-            <div class="third-illustration-content">
+            <div class="third-illustration-content"data-aos="zoom-out" data-aos-delay="300"data-aos-duration="1000">
               <img src="images/access illustratiom.png" alt="third illustration">
               <div class="illustration-description third-description">
                 <h2>Custormer support on the go.</h2>
@@ -230,7 +231,7 @@
       <footer>
         <div class="container">
           <div class="footer-content">
-            <h1>Join Waitlist</h1>
+            <h1 data-aos="fade-in" data-aos-delay="200"data-aos-duration="1000">Join Waitlist</h1>
             <p>To get early access when we launch</p>
             <form action="" class="footer-form">
               <input type="email" class="footer-input" placeholder="Enter your email address">
@@ -287,6 +288,7 @@
       </footer>
 
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script src="js/index.js"></script>
 
 </body>
