@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title> FAQ </title>
 </head>
 <body>
@@ -61,14 +63,16 @@
              <div class="hero-content faq-hero-content">
                  <div class="hero-content-col1 faq-hero-content-col1">
                    <h1 class="faq-heading"> FAQs 
+                   </h1>
+                   <h1 class="faq-sub-heading"> 
                     Frequently Asked Questions
                    </h1>
                    <p> 
-                    Have any question
+                    Have any question?
                    </p>
                    <form action="" class="faq-search-input">
                      <button class="search-button"><i class="fa fa-search"></i></button>
-                     <input type="search">
+                     <input type="search" placeholder="Search for your question">
                    </form>
                  </div>
                  <div class="hero-content-col2">
@@ -89,10 +93,144 @@
     
 
       <section class="accordion-section">
+        <div class="container">
+
+          <div class="accordion-bral">
+            
+            <div class="accordion-heading">
+              <h1> Frequently Asked Questions</h1>
+            </div>
+            <div>
+              <!-- accordion item 1 -- start -->
+              <input class="ac-input" id="ac-1" name="accordion-1" type="checkbox" checked/>
+              <label class="ac-label" for="ac-1">What is PENI<i></i></label>
+              <div class="article ac-content">
+                <P>PENI is....</P>
+              </div>
+            </div>
+            <!-- accordion item 1 -- end -->
+          
+            <div>
+              <!-- accordion item 2 -- start -->
+              <input class="ac-input" id="ac-2" name="accordion-1" type="checkbox" checked/>
+              <label class="ac-label" for="ac-2">How does PENI work?<i></i></label>
+              <div class="article ac-content">
+                <p>PENI soooo... </p>
+              </div>
+            </div>
+            <!-- accordion item 2 -- end -->
+          
+            <div>
+              <!-- accordion item 3 -- start -->
+              <input class="ac-input" id="ac-3" name="accordion-1" type="checkbox" />
+              <label class="ac-label" for="ac-3">Why should I budget my finances with PENI<i></i></label>
+              <div class="article ac-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, tempore?...</p>
+              </div>
+            </div>
+            <!-- accordion item 3 -- end -->
+          
+            <div>
+              <!-- accordion item 4 -- start -->
+              <input class="ac-input" id="ac-4" name="accordion-1" type="checkbox" />
+              <label class="ac-label" for="ac-4">Does PENI have plans for those with unsteady income?<i></i></label>
+              <div class="article ac-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, minus!</p>
+              </div>
+            </div>
+            <!-- accordion item 4 -- end -->
+            <div>
+              <!-- accordion item 5 -- start -->
+              <input class="ac-input" id="ac-5" name="accordion-1" type="checkbox" />
+              <label class="ac-label" for="ac-5">What Set of people can use the PENI App?<i></i></label>
+              <div class="article ac-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, minus!</p>
+              </div>
+            </div>
+            <!-- accordion item 5 -- end -->
+            
+          </div>
+        </div>
 
       </section>
 
+      <section class="question-section">
+        <div class="container">
+          <div class="question-heading">
+            <h2>Still have questions?</h2>
+          </div>
+          <p>
+            If you cannot find answers to your
+            question in our FAQ, you can always contact us. We will answer you shortly.
+          </p>
+          <button class="contact-button">
+            Contact Us
+          </button>
+        </div>
+      </section>
 
-      <script src="js/index.js"></script>  
+        <!-- FOOTER SECTION -->
+        <footer>
+          <div class="container">
+            <div class="footer-content">
+              <h1 data-aos="fade-in" data-aos-delay="200"data-aos-duration="1000">Join Waitlist</h1>
+              <p>To get early access when we launch</p>
+              <form action="" class="footer-form">
+                <input type="email" class="footer-input" placeholder="Enter your email address">
+                <button class="subscribe-button footer-button">Join Waitlist</button>
+              </form>
+  
+              <div class="brand-logo">
+                <div class="circled-bg">
+                  <img src="images/peni transp logo.png" alt="logo">
+                </div>
+                <h3>PENI</h3>
+              </div>
+              <div class="footer-logo-details">
+                <h4 class="details">Make every penny count with PENI
+                </h4>
+              </div>
+              <hr>
+             
+              <div class="footer-link">
+                <div class="footer-logo-content">
+                  <div class="brand-logo footer-logo">
+                    <div class="circled-bg">
+                      <img src="images/peni transp logo.png" alt="logo">
+                    </div>
+                    <h3>PENI</h3>
+                  </div>
+                  <h4 class="details">Make every penny count with PENI
+                  </h4>
+                </div>
+  
+                <ul class="footer-link-content">
+                  <li class="footer-link-heading">Company</li>
+                  <li class="footer-link-others"><a href="">Features</a></li>
+                  <li class="footer-link-others"><a href="">Blog</a></li>
+                  <li class="footer-link-others"><a href="">FAQ</a></li>
+                  <li class="footer-link-others"><a href="">Contacts</a></li>
+                </ul>
+                <ul class="footer-link-content">
+                  <li class="footer-link-heading">Follow</li>
+                  <li class="footer-link-others"><a href="">Facebook</a></li>
+                  <li class="footer-link-others"><a href="">Linkedln</a></li>
+                  <li class="footer-link-others"><a href="">Instagram</a></li>
+                  <li class="footer-link-others"><a href="">Twitter</a></li>
+                </ul>
+                <ul class="footer-link-content">
+                  <li class="footer-link-heading">Contact</li>
+                  <li class="footer-link-heading"><a href="">Conatct
+                    Info@mypeni.com</a></li>
+                </ul>
+              </div>
+  
+            </div>
+          </div>
+        </footer>
+
+
+      <script src="js/index.js"></script> 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
 </body>
 </html>

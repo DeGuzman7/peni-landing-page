@@ -16,4 +16,17 @@ if (element.classList.contains('mobile-navigation-open')){
  }
 }
 
+
+// initalizing aos
 AOS.init();
+
+
+
+// activating accordion onlcick
+const accordion = document.getElementsByClassName('ccontainer');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}

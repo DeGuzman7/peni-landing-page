@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&family=Poppins:wght@400;500;700&display=swap');
+:root{
+    --orange-color:#FF6E00;
+    --black-color:#000000;
+    --white-color:#ffffff;
+    --purple-color:#30106B;
+    --light-purple:#9F8EBF;
+    --heading-color: rgba(0, 0, 0, 0.75);
+
+    --poppins:'Poppins', sans-serif;
+
+}
+
+.faq-hero-content p{
+    font-weight: 800;
+    color: rgb(0, 0, 0,0.85);
+}
+
+.faq-search-input input{
+    height: 6rem;
+    padding-left: 6rem;
+    font-weight: 700;
+    border: 1px solid #ECECEC;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+}
+ 
+
+.search-button{
+    background: transparent;
+    border: none;
+    position: absolute;
+    font-size: 2rem;
+    top: 20%;
+    left: 5%;
+    z-index: 2;
+
+}
+ /* for tablet-desktop view */
+ @media (min-width: 550px){
+    .faq-heading{
+        font-size:4rem !important;
+    }
+    .faq-sub-heading{
+        font-size: 3rem !important;
+    }
+    .faq-hero-content-col1{
+        text-align: center;
+    }
+   
+ }
+ @media (min-width: 980px){
+    .faq-hero-content p{
+        font-size: 1.4rem;
+    
+       
+    }
+    .faq-search-input{
+        width: 100%;
+    }
+    .faq-hero-content{
+        gap: 2rem;
+       
+    }
+
+ }
+
+
+
+/* ACCORDION SECTION */
+.accordion-heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    font-weight: 700;
+}
+.accordion-bral {
+    
+    border: 1px solid #AAAAAA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    margin-top: 2rem;
+  
+  }
+ 
+  
+  .accordion-bral .ac-label:hover {
+    background:  rgba(237, 229, 252, 0.9);
+  }
+  .accordion-bral input + .ac-label  {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .accordion-bral input:checked + .ac-label,
+  .accordion-bral input:checked + .ac-label:active {
+    background-color: var(--purple-color) !important;
+    color: #FFF;
+    
+  }
+  .accordion-bral input.ac-input {
+    display: none;
+  }
+  .accordion-bral .article {
+    background: rgb(240, 240, 240);
+    overflow: hidden;
+    height: 0px;
+    max-height: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .accordion-bral .article p {
+    color:var(--black-color);
+    line-height: 23px;
+    padding: 20px;
+  }
+  .accordion-bral input:checked ~ .article i {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .accordion-bral input:checked ~ .article.ac-content {
+    height: auto;
+  }
+  
+  .accordion-bral i {
+    position: absolute;
+    transform: translate(-30px, 0);
+    margin-top: 16px;
+    right: 0;
+  }
+  .accordion-bral input:checked ~ .ac-label i:before {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+  .accordion-bral input:checked ~ .ac-label i:after {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  .accordion-bral i:before, .accordion-bral i:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.75);
+    width: 3px;
+    height: 9px;
+  }
+  .accordion-bral i:before {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+  .accordion-bral i:after {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+  .accordion-bral .ac-label {
+    padding: 5px 20px;
+    position: relative;
+    display: block;
+    height: auto;
+    font-size: 1.4rem;
+    padding-right: 40px;
+    cursor: pointer;
+    line-height: 33px;
+    border: 1px solid var(--black-color);
+  }
+ 
+  /* for tablet-desktop view */
+  @media (min-width: 550px) {
+    .accordion-heading{
+        font-size: 3.4rem;
+       
+    }
+    .accordion-bral .ac-label {
+    padding: 5px 20px;
+    position: relative;
+    height: auto;
+    font-size: 2rem;
+    padding-right: 40px;
+    cursor: pointer;
+    line-height: 33px;
+    border: 1px solid var(--black-color);
+  }
+    .accordion-bral i {
+    position: absolute;
+    transform: translate(-30px, 0);
+    margin-top: 2%;
+    right: 0;
+  }
+  }
+  /* ---------- accordion style end --------------------------------------- */
+
+/* ANY QUESTION SECTION */
+.question-section{
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .question-heading h2{
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .contact-button{
+    background: var(--orange-color);
+    border: none;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: 550px){
+    .question-section p{
+        max-width: 50rem;
+        margin: 0 auto;
+      }
+      .question-heading h2{
+        font-size: 3rem;
+      }
+  }
