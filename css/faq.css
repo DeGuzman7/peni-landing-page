@@ -52,14 +52,16 @@
  @media (min-width: 980px){
     .faq-hero-content p{
         font-size: 1.4rem;
-    
-       
+         
+    }
+    .faq-hero-content .faq-hero-content-col1{
+      width: 70rem;
     }
     .faq-search-input{
         width: 100%;
     }
     .faq-hero-content{
-        gap: 2rem;
+        gap: 7rem;
        
     }
 
